@@ -23,7 +23,10 @@ const fetchPokemon = () => {
             return accumulator;
         },
         "");
-    })
+
+        const ul = document.querySelector('[data="pokedex"]');
+        ul.innerHTML = listPokemons;
+    });
 };
 
 fetchPokemon();
